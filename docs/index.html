@@ -7,6 +7,7 @@
     <title>Decora / Landing-Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="midias/icone.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -14,11 +15,8 @@
         <nav id="inicio">
             <img src="midias/Decora.png" alt="logo_decora" id="logo-decora">
             <ul id="navbar-items">
-                <li>Início</li>
                 <li>Funcionalidades</li>
-                <li>Problema</li>
-                <li>Nicho</li>
-                <li>Proposta de valor</li>
+                <li>Prova Social</li>
             </ul>
             <button id="cta-main">GoFundMe</button>
         </nav>
@@ -26,21 +24,25 @@
         <section id="hero">
             <div id="cima">
                 <article id="main-frame">
-                    <h1>Revolucionando a <br> decoração para um <br> futuro mais prático.</h1>
-                    <p>Oferecemos a praticidade que os jovens e visionários buscam, <br> com uma abordagem inteligente e
-                        inovadora para a <br> decoração de ambientes.</p>
+                    <h1>Revolucionando a decoração para um futuro mais prático.</h1>
+                    <p>Oferecemos a praticidade que os jovens e visionários buscam, com uma abordagem inteligente e
+                        inovadora para a decoração de ambientes.</p>
                 </article>
 
                 <div id="interacao-container">
-                    <article id="interacao">
-                        <h1>Sinta um gostinho do futuro!</h1>
-                        <div id="valor-interacao">R$ 1000</div>
-                    </article>
+                    <div id="interacao-wrapper">
+                        <article id="interacao">
+                            <h1>Sinta um gostinho do futuro!</h1>
+                            <div id="valor-interacao">R$ 1000</div>
+                        </article>
 
-                    <article id="interacao-valor">
-                        <input type="range" id="valor" value="1" min="1" max="360" step="1">
-                        <p>*Mobilia e valores fictícios.</p>
-                    </article>
+                        <article id="interacao-valor">
+                            <input type="range" id="valor" value="1" min="1" max="360" step="1">
+                            <p>*Mobilia e valores fictícios.</p>
+                        </article>
+                    </div>
+
+                    <div id="filler"></div>
                 </div>
             </div>
 
@@ -68,22 +70,31 @@
             <li class="card">
                 <img src="midias/imagens/orcamento-automatico.png" alt="imagem de apoio">
                 <div class="conteudo">
-                    <h2>Orçamento automático:</h2>
-                    <p>Diga adeus às ligações intermináveis e formulários complicados. Com o Decora, você obtém orçamentos instantâneos para móveis e serviços de decoração com apenas alguns cliques.</p>
+                    <h2>Projetos Personalizados e Descomplicados:</h2>
+                    <p>Crie projetos arquitetônicos personalizados para seus espaços com facilidade.</p>
+                    <p>Nossa plataforma intuitiva guia você desde a definição do orçamento até a escolha de módulos e
+                        estilos, garantindo uma experiência descomplicada e única.</p>
                 </div>
             </li>
             <li class="card">
                 <img src="midias/imagens/conexao-com-profissionais.png" alt="imagem de apoio">
                 <div class="conteudo">
-                    <h2>Conexão com profissionais:</h2>
-                    <p>Você poderá contar com um guia virtual para prevenir qualquer erro crítico em seu projeto, ajudando você a visualizar o seu ambiente da maneira mais fiel possível!</p>
+                    <h2>Conectando Você com as Melhores Opções do Mercado:</h2>
+                    <p>Explore uma variedade de lojas e indústrias especializadas, selecionando módulos, materiais e
+                        estilos que se encaixam no seu orçamento.</p>
+                    <p>Nossa plataforma conecta você diretamente com especialistas, garantindo que suas escolhas
+                        resultem em um ambiente perfeito.</p>
                 </div>
             </li>
             <li class="card">
                 <img src="midias/imagens/prevencap-de-erros.png" alt="imagem de apoio">
                 <div class="conteudo">
-                    <h2>Prevenção de erros:</h2>
-                    <p>Você poderá contar com um guia virtual para prevenir qualquer erro crítico em seu projeto. Ajudando você a visualizar o seu ambiente da maneira mais fiel possível!</p>
+                    <h2>Inovação Garantida, Resultados Tangíveis:</h2>
+                    <p>Ao escolher nossa plataforma, você cria um ambiente dos sonhos e impulsiona a inovação no setor.
+                    </p>
+                    <p>Com relatórios detalhados, mostramos como suas escolhas de design impactam positivamente,
+                        inspirando a evolução constante da plataforma. Faça parte dessa jornada, onde cada decisão de
+                        decoração é uma oportunidade para resultados tangíveis.</p>
                 </div>
             </li>
         </ul>
@@ -95,38 +106,18 @@
     </section>
 
     <section id="prova-social">
-        <div id="prova-social-esquerda">
-            <h1>Deixe os comentários falarem por si só...</h1>
-            <p>Só algumas das diversas validações que tivemos durante nossas pesquisas 😉</p>
-            <img src="" alt="seta">
-            <p>Áudios reais de pessoas entrevistadas durante a fase de pesquisa do projeto!</p>
-        </div>
-        <div id="frases">
-            <ul>
-                <li class="frase">
-                    <h2><span class="aspas">"</span> Frase <span class="aspas">"</span></h2>
-                    <p>-Nome da pessoa, Instituição</p>
-                </li>
-                <li class="frase">
-                    <h2><span class="aspas">"</span> Frase <span class="aspas">"</span></h2>
-                    <p>-Nome da pessoa, Instituição</p>
-                </li>
-                <li class="frase">
-                    <h2><span class="aspas">"</span> Frase <span class="aspas">"</span></h2>
-                    <p>-Nome da pessoa, Instituição</p>
-                </li>
-            </ul>
-        </div>
+        <article>
+            <div id="esquerda">
+                <div id="frase">
+                    <p id="autor">-Quem disse a frase</p>
+                    <h1 id="frase-txt">"Lorem ipsum sit dolor amet!</h1>
+                </div>
+                <div id="prox-frase"> Mais feedbacks <i class="ph ph-arrow-right"></i> </div>
+            </div>
+
+            <figure id="imagens-prova-social"><img src=""></figure>
+        </article>
     </section>
-
-    <footer id="cta-final">
-        <div id="textos-footer">
-            <h1>Quer saber mais sobre o projeto?</h1>
-            <p>Clique no botão a baixo para ver o nosso plano de negócios completo!</p>
-        </div>
-        <button>Plano de negócios</button>
-    </footer>
-
 
     <script src="script/main.js"></script>
 </body>

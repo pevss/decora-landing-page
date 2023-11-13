@@ -1,11 +1,16 @@
-*{
+@font-face {
+    font-family: "AppleGaramond";
+    src: url(fonts/AppleGaramond.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --primaria: #1938f2;
     --secundaria: #eef0ff;
     --terciaria: #000211;
@@ -17,56 +22,49 @@
     --card-color: #e8eaff;
 }
 
-html{
+html {
     background-color: var(--secundaria);
     scroll-behavior: smooth;
 }
 
-section, nav, footer{
+
+section,
+nav,
+footer {
     max-width: 1144px;
     margin: auto;
 }
 
-section{
+section {
     margin-bottom: 130px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-h1{
+h1 {
     font-size: var(--heading);
     line-height: 115%;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: var(--subheading);
 }
 
-p{
+p {
     font: var(--paragraph);
 }
 
-span{
+span {
     color: var(--primaria);
-}
-
-#fundo1{
-    display: block;
-    position: relative;
-    margin-top: 0;
-    top: 750px;
-    width: 100%;
-    height: 100svh;
-    background-color: var(--primaria);
-    z-index: -10;
+    font-size: var(--heading);
 }
 
 /* Navbar */
 
-nav{
+nav {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
@@ -74,7 +72,7 @@ nav{
     width: 100%;
 }
 
-#navbar-items{
+#navbar-items {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -84,11 +82,11 @@ nav{
     font-size: var(--subheading);
 }
 
-#navbar-items li{
+#navbar-items li {
     cursor: pointer;
 }
 
-#cta-main{
+#cta-main {
     border: none;
     background-color: var(--secundaria);
     border-radius: 10px;
@@ -101,7 +99,7 @@ nav{
     cursor: pointer;
 }
 
-#cta-main:hover{
+#cta-main:hover {
     color: var(--secundaria);
     background-color: var(--primaria);
     box-shadow: 0px 0px 0px 2px var(--secundaria) inset;
@@ -110,7 +108,7 @@ nav{
 
 /* Hero */
 
-#fundo-hero{
+#fundo-hero {
     background-color: var(--primaria);
     width: 100%;
     height: 750px;
@@ -119,63 +117,69 @@ nav{
     margin-bottom: 200px;
 }
 
-#hero{
+#hero {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 }
 
-#hero #cima{
+#hero #cima {
     display: flex;
     width: 100%;
     gap: 20px;
 }
 
-#main-frame{
+#main-frame {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
+    width: 200%;
     padding: 40px;
     background-color: var(--primaria);
     border-radius: 20px;
-    min-width: 770px;
-    background-image: url(../midias/imagens/Mask\ group.jpg); 
+    background-image: url(../midias/imagens/Mask\ group.jpg);
     background-size: cover;
 }
 
-#main-frame h1{
+#main-frame h1 {
     color: var(--primaria);
 
 }
 
-#main-frame p{
+#main-frame p {
     font-weight: normal;
     color: var(--terciaria);
 }
 
-#interacao-container{
+#interacao-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
+}
+
+#interacao-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     gap: 20px;
 }
 
-#interacao{
+#interacao {
     justify-content: space-between;
     min-height: 418px;
 }
 
-#interacao h1{
+#interacao h1 {
     text-align: center;
     font-size: var(--heading2);
     color: var(--primaria);
 }
 
-#interacao-valor, #interacao{
+#interacao-valor,
+#interacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,21 +190,21 @@ nav{
     width: 100%;
 }
 
-#interacao-valor{
+#interacao-valor {
     gap: 10px;
 }
 
-#interacao-valor p{
+#interacao-valor p {
     font-size: 0.75rem;
     color: rgba(0, 2, 17, 0.3);
 }
 
-#interacao-valor input{
+#interacao-valor input {
     width: 100%;
     color: var(--primaria);
 }
 
-#valor-interacao{
+#valor-interacao {
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -208,8 +212,9 @@ nav{
     color: var(--primaria);
 }
 
-#marcas{
+#marcas {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -219,16 +224,16 @@ nav{
     padding: 30px 60px;
 }
 
-#marcas p{
+#marcas p {
     color: var(--terciaria);
 }
 
-#marcas-lista{
+#marcas-lista {
     display: flex;
     width: 100%;
 }
 
-#marcas-lista li{
+#marcas-lista li {
     margin: auto;
     opacity: 80%;
 }
@@ -236,12 +241,12 @@ nav{
 
 /* Introdução */
 
-#introducao{
+#introducao {
     display: flex;
     justify-content: center;
 }
 
-#introducao h1{
+#introducao h1 {
     width: 70%;
     text-align: center;
     font-size: var(--heading);
@@ -250,22 +255,24 @@ nav{
 
 /* Cards */
 
-#cards{
+#cards {
     display: flex;
     justify-content: center;
-}
-
-#cards-lista{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
     width: 100%;
 }
 
-.card{
+#cards-lista {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1144px;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    flex-grow: 1;
     width: 100%;
     border-radius: 20px;
     box-shadow: var(--sombra);
@@ -273,7 +280,7 @@ nav{
     overflow: hidden;
 }
 
-.card .conteudo{
+.card .conteudo {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -284,38 +291,38 @@ nav{
     background-color: var(--secundaria);
 }
 
-.card .conteudo h2{
+.card .conteudo h2 {
     color: var(--primaria);
 }
 
-.card .conteudo p{
+.card .conteudo p {
     color: var(--terciaria);
 }
 
-.card img{
+.card img {
     transition: ease-in-out;
     transition-duration: 200ms;
 }
 
-.card:hover img{
+.card:hover img {
     transform: scale(1.05);
 }
 
 
 /* Video prototiopo */
 
-#video-prototipo{
+#video-prototipo {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#video-prototipo h1{
+#video-prototipo h1 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-#video-prototipo video{
+#video-prototipo video {
     border-radius: 20px;
     background-color: rgb(231, 231, 231);
     box-shadow: var(--sombra);
@@ -324,21 +331,323 @@ nav{
 
 /* Prova social */
 
-
-
-
-/* Footer */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 130px;
-    gap: 30px;
+#prova-social {
+    max-width: none;
+    padding: 40px;
+    width: 100%;
+    color: var(--secundaria);
+    background-image: url(../midias/imagens/Fundo\ prova\ social.png);
+    margin-bottom: 0px;
 }
 
-#textos-footer{
+#prova-social article {
+    margin: auto;
+    max-width: 1144px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prova-social #frase {
+    margin-bottom: 60px;
+}
+
+#prova-social #frase p {
+    font-family: AppleGaramond;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 0;
+}
+
+#autor,
+#frase-txt {
+    font-family: AppleGaramond;
+}
+
+#prox-frase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: var(--secundaria) 1px solid;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: var(--paragraph);
+    cursor: pointer;
+    max-width: max-content;
+}
+
+#prox-frase:hover {
+    background-color: #eef0ff1c;
+}
+
+#frase{
+    animation-name: texto-entrando;
+    animation-duration: 1s;
+}
+
+@keyframes texto-entrando{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        left: auto;
+        opacity: 100%;
+    }
+}
+
+@keyframes texto-saindo{
+    from{
+        left: auto;
+        opacity: 100%;
+    }
+    to{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* Desktop pequeno */
+@media (max-width: 1024px){
+    section,
+    nav,
+    footer {
+        padding: 50px;
+    }
+
+    section{
+        margin-bottom: 50px;
+    }
+
+    #logo-decora{
+        width: 130px;
+    }
+
+    #cta-main{
+        font-size: var(--paragraph);
+    }
+    
+    #navbar-items{
+        font-size: var(--paragraph);
+    }
+
+    nav{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0px;
+    }
+
+    #fundo-hero{
+        height: 1000px;
+        margin-bottom: 150px;
+    }
+
+    #main-frame{
+        width: 100%;
+        background-color: none;
+        background-image: none;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    #main-frame h1, #main-frame p{
+        color: var(--secundaria);
+    }
+
+    #hero #cima{
+        flex-direction: column;
+    }
+
+    #interacao-container{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #interacao-container div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #filler{
+        width: 50vw;
+        height: 532px;
+        border-radius: 20px;
+        background-image: url(../midias/imagens/Mask\ group.jpg);
+    }
+
+    #marcas-lista li img{
+        height: 30px;
+    }
+
+    #cards-lista{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex-direction: row;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px){
+    #fundo-hero{
+        padding: 0;
+        height: 1070px;
+    }
+
+    nav{
+        padding-top: 25px;
+    }
+
+    #navbar-items{
+        display: none;
+    }
+
+    #filler{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    #interacao-container #interacao-wrapper{
+        width: 100%;
+    }
+
+    #interacao-container{
+        gap: 0;
+    }
+
+    #marcas-lista li img{
+        height: 25px;
+    }
+
+    #introducao{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #introducao h1{
+        width: 100%;
+    }
+
+    #introducao img:last-child{
+        display: none;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    #prova-social article{
+        flex-direction: column-reverse;
+    }
+
+    #prox-frase{
+        max-width: none;
+    }
+}
+
+/* Celulares Grandes*/
+@media (max-width: 425px){
+    *{
+        font-size: 13px;
+    }
+
+    section,
+    nav,
+    footer {
+        padding: 30px;
+    }
+
+    #main-frame{
+        padding: 0;
+    }
+    
+    #fundo-hero{
+        padding: 0;
+        height: 1030px;
+    }
+
+    #marcas{
+        padding: 20px;
+        width: 100%;
+    }
+
+    #marcas p{
+        font-size: 0.75rem;
+    }
+
+    #marcas-lista li img{
+        height: 16px;
+    }
+}
+
+@media (max-width: 375px){
+    *{
+        font-size: 11px;
+    }
+
+    .card{
+        width: 250px;
+    }
+    
+    #marcas{
+        display: none;
+    }
+
+    #fundo-hero{
+        padding: 0;
+        height: 860px;
+    }
+}
+
+@media (max-width: 320px){
+    *{
+        font-size: 10px;
+    }
+
+    section,
+    nav,
+    footer {
+        padding: 20px;
+    }
+
+    nav{
+        padding-bottom: 10px;
+    }
+
+    #main-frame{
+        padding: 0;
+        gap: 15px;
+    }
+
+    #fundo-hero{
+        padding: 0;
+        height: 730px;
+    }
+
+    #interacao{
+        min-height: 350px;
+    }
+
+    #interacao-valor{
+        padding: 20px;
+    }
+
+    #marcas{
+        display: none;
+    } 
+
+    .card{
+        width: 250px;
+    }
 }
