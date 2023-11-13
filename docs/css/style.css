@@ -382,6 +382,7 @@ nav {
     font-size: var(--paragraph);
     cursor: pointer;
     max-width: max-content;
+    margin-bottom: 50px;
 }
 
 #prox-frase:hover {
