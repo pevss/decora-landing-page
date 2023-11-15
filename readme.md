@@ -1,6 +1,8 @@
 Decora 🪴🏠
 ===
 
+Link para a landing-page: https://pevss.github.io/decora-landing-page/
+
 🤬 Problema
 ---
 É notável que ao chegar na maioria dos sites de decoração de ambientes, nos deparamos com a seguinte imagem: 
