@@ -62,7 +62,7 @@ span {
     font-size: var(--heading);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--secundaria);
 }
@@ -115,6 +115,7 @@ nav {
 
 #fundo-hero {
     background-color: var(--primaria);
+    background-image: url(../midias/imagens/Fundo\ prova\ social.png);
     width: 100%;
     height: 750px;
     padding-top: 40px;
@@ -141,20 +142,29 @@ nav {
     gap: 30px;
     width: 200%;
     padding: 40px;
-    background-color: var(--primaria);
     border-radius: 20px;
-    background-image: url(../midias/imagens/Mask\ group.jpg);
+    background-image: url(../midias/gifs/hero-degrade-2.gif);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #main-frame h1 {
     color: var(--primaria);
-
+    width: 500px;
 }
 
 #main-frame p {
     font-weight: normal;
     color: var(--terciaria);
+    width: 450px;
+}
+
+#filler {
+    background-image: url(../midias/gifs/hero.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #interacao-container {
@@ -165,7 +175,7 @@ nav {
     width: 100%;
 }
 
-#interacao-container div{
+#interacao-container div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -175,6 +185,9 @@ nav {
 #interacao {
     justify-content: space-between;
     min-height: 418px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #interacao h1 {
@@ -190,7 +203,7 @@ nav {
     align-items: center;
     text-align: center;
     background-color: var(--secundaria);
-    padding: 25px 50px;
+    padding: 25px 40px;
     border-radius: 20px;
     width: 100%;
 }
@@ -213,7 +226,6 @@ nav {
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: var(--sombra);
     color: var(--primaria);
 }
 
@@ -248,7 +260,10 @@ nav {
 
 #introducao {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 #introducao h1 {
@@ -389,28 +404,30 @@ nav {
     background-color: #eef0ff1c;
 }
 
-#frase{
+#frase {
     animation-name: texto-entrando;
     animation-duration: 1s;
 }
 
-@keyframes texto-entrando{
-    from{
+@keyframes texto-entrando {
+    from {
         transform: translateX(-100px);
         opacity: 0;
     }
-    to{
+
+    to {
         left: auto;
         opacity: 100%;
     }
 }
 
-@keyframes texto-saindo{
-    from{
+@keyframes texto-saindo {
+    from {
         left: auto;
         opacity: 100%;
     }
-    to{
+
+    to {
         transform: translateX(-100px);
         opacity: 0;
     }
@@ -421,41 +438,42 @@ nav {
 
 
 /* Desktop pequeno */
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+
     section,
     nav,
     footer {
         padding: 50px;
     }
 
-    section{
+    section {
         margin-bottom: 50px;
     }
 
-    #logo-decora{
+    #logo-decora {
         width: 130px;
     }
 
-    #cta-main{
-        font-size: var(--paragraph);
-    }
-    
-    #navbar-items{
+    #cta-main {
         font-size: var(--paragraph);
     }
 
-    nav{
+    #navbar-items {
+        font-size: var(--paragraph);
+    }
+
+    nav {
         padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 0px;
     }
 
-    #fundo-hero{
+    #fundo-hero {
         height: 1000px;
         margin-bottom: 150px;
     }
 
-    #main-frame{
+    #main-frame {
         width: 100%;
         background-color: none;
         background-image: none;
@@ -463,109 +481,114 @@ nav {
         padding-top: 0;
     }
 
-    #main-frame h1, #main-frame p{
+    #main-frame h1,
+    #main-frame p {
         color: var(--secundaria);
+        width: 100%;
     }
 
-    #hero #cima{
+    #hero #cima {
         flex-direction: column;
     }
 
-    #interacao-container{
-        flex-direction: row;
+    #interacao-container {
+        flex-direction: row-reverse;
         gap: 20px;
     }
 
-    #interacao-container div{
+    #interacao-container div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    #filler{
+    #filler {
         width: 50vw;
         height: 532px;
         border-radius: 20px;
-        background-image: url(../midias/imagens/Mask\ group.jpg);
     }
 
-    #marcas-lista li img{
+    #marcas-lista li img {
         height: 30px;
     }
 
-    #cards-lista{
+    #cards-lista {
         flex-wrap: wrap;
     }
 
-    .card{
+    .card {
         flex-direction: row;
     }
 }
 
 /* Tablets */
-@media (max-width: 768px){
-    #fundo-hero{
+@media (max-width: 768px) {
+    #fundo-hero {
         padding: 0;
         height: 1070px;
     }
 
-    nav{
+    nav {
         padding-top: 25px;
     }
 
-    #navbar-items{
+    #navbar-items {
         display: none;
     }
 
-    #filler{
+    #filler {
         width: 0;
         height: 0;
         display: none;
     }
 
-    #interacao-container #interacao-wrapper{
+    #interacao-container #interacao-wrapper {
         width: 100%;
     }
 
-    #interacao-container{
+    #interacao-container {
         gap: 0;
     }
 
-    #marcas-lista li img{
+    #marcas-lista li img {
         height: 25px;
     }
 
-    #introducao{
+    #introducao {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    #introducao h1{
+    #introducao h1 {
         width: 100%;
     }
 
-    #introducao img:last-child{
+    #introducao img:last-child {
         display: none;
     }
 
-    .card{
+    .card {
         flex-direction: column;
     }
 
-    #prova-social article{
+    #prova-social article {
         flex-direction: column-reverse;
     }
 
-    #prox-frase{
+    #prox-frase {
         max-width: none;
     }
 }
 
 /* Celulares Grandes*/
-@media (max-width: 425px){
-    *{
-        font-size: 13px;
+@media (max-width: 425px) {
+    :root {
+        --heading: 2.5rem;
+        --heading2: 1.75rem;
+        --subheading: 1.25rem;
+        --paragraph: 1rem;
+        --paragraph: 0.8rem;
     }
 
     section,
@@ -574,56 +597,64 @@ nav {
         padding: 30px;
     }
 
-    #main-frame{
+    nav {
+        padding-bottom: 0;
+    }
+
+    #main-frame {
         padding: 0;
     }
-    
-    #fundo-hero{
+
+    #fundo-hero {
         padding: 0;
         height: 1030px;
     }
 
-    #marcas{
+    #interacao {
+        padding: 24px;
+    }
+
+    #marcas {
         padding: 20px;
         width: 100%;
     }
 
-    #marcas p{
+    #marcas p {
         font-size: 0.75rem;
     }
 
-    #marcas-lista li img{
+    #marcas-lista li img {
         height: 16px;
     }
 }
 
-@media (max-width: 375px){
-    *{
-        font-size: 11px;
+@media (max-width: 375px) {
+    :root {
+        --heading: 2rem;
+        --heading2: 1.3rem;
+        --subheading: 1rem;
+        --paragraph: 0.8rem;
     }
 
-    .card{
+    .card {
         width: 250px;
     }
-    
-    #marcas{
+
+    #marcas {
         display: none;
     }
 
-    #fundo-hero{
+    #fundo-hero {
         padding: 0;
-        height: 860px;
+        height: 900px;
     }
 
-    #interacao-valor{
+    #interacao-valor {
         padding: 20px;
     }
 }
 
-@media (max-width: 320px){
-    *{
-        font-size: 10px;
-    }
+@media (max-width: 320px) {
 
     section,
     nav,
@@ -631,33 +662,33 @@ nav {
         padding: 20px;
     }
 
-    nav{
+    nav {
         padding-bottom: 10px;
     }
 
-    #main-frame{
+    #main-frame {
         padding: 0;
         gap: 15px;
     }
 
-    #fundo-hero{
+    #fundo-hero {
         padding: 0;
-        height: 730px;
+        height: 800px;
     }
 
-    #interacao{
+    #interacao {
         min-height: 350px;
     }
 
-    #interacao-valor{
+    #interacao-valor {
         padding: 20px;
     }
 
-    #marcas{
+    #marcas {
         display: none;
-    } 
+    }
 
-    .card{
+    .card {
         width: 250px;
     }
 }
