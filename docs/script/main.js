@@ -50,7 +50,7 @@ document.querySelector("#prox-frase").addEventListener("click", function () {
         autor.innerText = `- ${autores[currIndex]}`
         frase.innerText = `"${frases[currIndex]}"`
         fraseWrapper.style.animationName = "texto-entrando"
-        //imagemFrases.style.src = `midias/imagens/prova-social-${currIndex}`
+        //imagemFrases.style.src = `midias/imagens/prova-social (${currIndex})`
     }, 998)
 
     if (currIndex === autores.length - 1) {

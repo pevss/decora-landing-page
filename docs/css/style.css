@@ -603,6 +603,7 @@ nav {
 
     #main-frame {
         padding: 0;
+        gap: 15px;
     }
 
     #fundo-hero {
@@ -634,6 +635,10 @@ nav {
         --heading2: 1.3rem;
         --subheading: 1rem;
         --paragraph: 0.8rem;
+    }
+
+    #main-frame{
+        gap: 15px;
     }
 
     .card {
@@ -668,7 +673,7 @@ nav {
 
     #main-frame {
         padding: 0;
-        gap: 15px;
+        gap: 10px;
     }
 
     #fundo-hero {
