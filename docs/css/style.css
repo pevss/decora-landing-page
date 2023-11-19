@@ -144,6 +144,7 @@ nav {
     padding: 40px;
     border-radius: 20px;
     background-image: url(../midias/gifs/hero-degrade-2.gif);
+    background-color: var(--secundaria);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
