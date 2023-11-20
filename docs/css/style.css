@@ -476,7 +476,7 @@ nav {
 
     #main-frame {
         width: 100%;
-        background-color: none;
+        background-color: transparent;
         background-image: none;
         text-align: center;
         padding-top: 0;
